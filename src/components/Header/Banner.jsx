@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <section className="my-20 grid grid-cols-1 md:grid-cols-2 ">
+    <section className="my-20 grid grid-cols-1 md:grid-cols-2 gap-10 ">
       {/* Left Content */}
       <div className="space-y-4">
         <h1 className="text-5xl md:text-7xl font-medium leading-tight text-black">
@@ -13,7 +13,7 @@ const Banner = () => {
           Sales Coach
         </h1>
 
-        <div className="flex items-center gap-16 mt-6">
+        <div className="flex md:flex-row flex-col items-center gap-16 mt-6">
           <div className="">
             <img
               src="/images/miniRobo.svg"
@@ -82,7 +82,7 @@ const Banner = () => {
 
         {/* Floating card */}
         <div
-          className="absolute bottom-[-3rem] left-1/2 transform -translate-x-11/12 bg-white py-12 px-6 rounded-3xl"
+          className="absolute scale-50 md:scale-100 bottom-[-3rem] left-1/2 transform -translate-x-11/12 bg-white py-12 px-6 rounded-3xl"
           style={{
             boxShadow: "15.575px 16.688px 20.47px 0px rgba(0, 0, 0, 0.07)",
           }}
