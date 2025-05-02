@@ -29,11 +29,11 @@ const FAQ = () => {
     <section className="myContainer pt-40">
       <div className=" mx-auto">
         <div className="flex flex-col md:flex-row items-start mb-20 gap-6 md:gap-26">
-          <p className="text-2xl text-foundationBlue">
+          <p className="text-2xl font-questrial text-foundationBlue">
             Frequently asked <br /> questions
           </p>
 
-          <h2 className="text-3xl md:text-5xl ">
+          <h2 className="text-3xl md:text-5xl font-questrial">
             Constant collaboration is how we roll. <br />
             Let’s see if we are a good fit.
           </h2>
@@ -47,16 +47,16 @@ const FAQ = () => {
                 onClick={() => toggleFAQ(index)}
               >
                 <div className="flex items-center gap-10">
-                  <span className="text-3xl font-semibold text-foundationYellow800">
+                  <span className="text-3xl font-questrial font-semibold text-foundationYellow800">
                     {String(index + 1).padStart(2, "0")}
                   </span>
 
                   <div className="flex flex-col gap-3 pr-10 ">
-                    <span className="text-4xl  text-black ">
+                    <span className="text-4xl font-questrial  text-black ">
                       {faq.question}
                     </span>
                     {openIndex === index && (
-                      <p className="text-md font-light leading-6  text-faq">
+                      <p className="text-md font-inter font-light leading-6  text-faq">
                         {faq.answer}
                       </p>
                     )}

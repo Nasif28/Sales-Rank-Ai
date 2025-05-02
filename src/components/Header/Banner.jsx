@@ -95,7 +95,7 @@ const Banner = () => {
           <p className="text-paragraph font-semibold mb-10 text-2xl">
             Growth is our priority.
           </p>
-          <p className="text-md text-paragraph/70 w-sm pr-16">
+          <p className="font-poppins text-md text-paragraph/70 w-sm pr-16">
             As a full-service business agency, we specialize in helping
             companies of all sizes optimize their operations.
           </p>

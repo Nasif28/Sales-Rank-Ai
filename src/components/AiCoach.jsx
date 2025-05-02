@@ -65,9 +65,9 @@ const AiCoach = () => {
   return (
     <section className="pt-10 pb-18 bg-gradient-to-r from-blue-900  to-blue-700 text-white">
       <div className="myContainer">
-        <p className="text-FoundationYellow text-2xl mb-5">Live Ai Coach</p>
+        <p className="text-FoundationYellow font-questrial text-2xl mb-5">Live Ai Coach</p>
 
-        <h1 className="text-4xl md:text-6xl mb-16">
+        <h1 className="text-4xl md:text-6xl mb-16 font-questrial">
           Take a Suggestion Coaching
         </h1>
 
@@ -95,7 +95,7 @@ const AiCoach = () => {
                   )}
 
                   <div
-                    className={`py-2 px-6 rounded-lg max-w-[75%]  ${
+                    className={`py-2 font-lato px-6 rounded-lg max-w-[75%]  ${
                       msg.sender === "user"
                         ? "bg-blue-600 text-white ml-auto"
                         : "bg-white text-black mr-auto"
@@ -125,7 +125,7 @@ const AiCoach = () => {
                     <button
                       key={idx}
                       onClick={() => handleSend(suggestion)}
-                      className="bg-buttonBG/10 text-foundationBlue text-sm px-4 py-2  rounded-4xl hover:bg-gray-300"
+                      className="bg-buttonBG/10 font-geist text-foundationBlue text-sm px-4 py-2  rounded-4xl hover:bg-gray-300"
                     >
                       {suggestion}
                     </button>
@@ -146,7 +146,7 @@ const AiCoach = () => {
                 />
                 <button
                   type="submit"
-                  className="bg-foundationBlue text-white px-5 py-3 rounded-lg hover:bg-blue-700 flex items-center justify-center gap-3"
+                  className="bg-foundationBlue font-geist text-white px-5 py-3 rounded-lg hover:bg-blue-700 flex items-center justify-center gap-3"
                 >
                   Send
                   <img
@@ -205,7 +205,7 @@ const AiCoach = () => {
                   <Level /> Confidence Level
                 </h3>
 
-                <p className="text-lg text-aiPara">
+                <p className="text-lg text-aiPara font-lato">
                   85% improvement in objection handling
                 </p>
               </div>
