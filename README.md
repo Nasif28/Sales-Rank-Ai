@@ -1,12 +1,65 @@
-# React + Vite
+# 💬 Sales Rank Ai
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive suggestion button component built with React and Tailwind CSS. Designed to provide quick message suggestions and a clean UI experience, especially optimized for small devices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Live Link
 
-## Expanding the ESLint configuration
+https://sales-rank-ai.vercel.app
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- Responsive design with horizontal scroll on small devices
+- Custom styling with Tailwind CSS
+- Custom color variable and font
+- Flexible and reusable JSX structure
+- Easily extendable for chatbots, comment inputs, and forms
+
+---
+
+## 🧰 Tools & Packages Used
+
+- **React** – Front-end JavaScript library for UI rendering
+- **Tailwind CSS** – Utility-first CSS framework for styling
+- **Vite / Create React App** – (choose your actual setup)
+
+---
+
+## 🛠️ Setup Instructions
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Nasif28/Sales-Rank-Ai.git
+   cd salesRankAi
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 📸 Screenshots
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
