@@ -45,7 +45,7 @@ const Banner = () => {
               />
             </div>
             <div className="gap-1 flex flex-col">
-              <p className="text-number text-4xl font-semibold">2000+</p>
+              <p className="text-paragraph text-4xl font-semibold">2000+</p>
               <p className="text-lg text-paragraph/70">Your protection</p>
             </div>
           </div>
@@ -63,7 +63,7 @@ const Banner = () => {
               />
             </div>
             <div className="gap-1 flex flex-col">
-              <p className="text-number text-4xl font-semibold">7001+</p>
+              <p className="text-paragraph text-4xl font-semibold">7001+</p>
               <p className="text-lg text-paragraph/70">Provide tailored</p>
             </div>
           </div>

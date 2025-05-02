@@ -63,16 +63,16 @@ const AiCoach = () => {
   };
 
   return (
-    <section className="pt-8 pb-12 bg-gradient-to-r from-blue-900  to-blue-700 text-white">
+    <section className="pt-10 pb-18 bg-gradient-to-r from-blue-900  to-blue-700 text-white">
       <div className="myContainer">
         <p className="text-FoundationYellow text-2xl mb-5">Live Ai Coach</p>
 
-        <h1 className="text-4xl md:text-6xl mb-14">
+        <h1 className="text-4xl md:text-6xl mb-16">
           Take a Suggestion Coaching
         </h1>
 
         <div className="flex flex-col lg:flex-row gap-6 items-center justify-between">
-          <div className="flex-[7] bg-white text-black rounded-xl  shadow-lg w-full h-[577px] mx-auto flex flex-col">
+          <div className="flex-[6] bg-white text-black rounded-xl  shadow-lg w-full h-[577px] mx-auto flex flex-col">
             <h3 className="text-aiTitle text-lg font-bold pt-4 pb-6 px-8">
               AI Sales Coach
             </h3>
@@ -159,7 +159,7 @@ const AiCoach = () => {
             </div>
           </div>
 
-          <div className=" flex flex-row lg:flex-col items-center justify-center bg-white text-black rounded-4xl gap-10 p-6 mx-auto">
+          <div className="flex flex-row lg:flex-col items-center justify-center bg-white text-black rounded-4xl gap-10 p-6 mx-auto">
             <div className="cursor-pointer" onClick={handleClearChat}>
               <RefreshIcon />
             </div>
@@ -177,13 +177,13 @@ const AiCoach = () => {
             </div>
           </div>
 
-          <div className="gap-6 flex-[4] flex flex-col items-center justify-center  w-full h-[577px] ">
-            <div className="basis-5/8  flex   flex-col bg-aiBG text-black rounded-xl w-full gap-5 p-7">
-              <h1 className="text-2xl md:text-3xl font-bold font-aiTitle">
+          <div className="gap-6 flex-[5] flex flex-col items-center justify-center  w-full h-[577px] ">
+            <div className="basis-5/8  flex flex-col bg-aiBG text-black rounded-3xl w-full gap-5 p-7">
+              <h1 className="text-2xl md:text-3xl font-bold font-aiTitle mb-2">
                 Real-time Analysis
               </h1>
 
-              <div className="flex flex-col gap-3 bg-white rounded-xl p-4">
+              <div className="flex flex-col gap-4 bg-white rounded-xl p-4">
                 <h3 className="text-lg text-aiSubTitle font-semibold flex gap-1 items-center">
                   <CheckCircleIcon className="w-6 h-6" /> Confidence Level
                 </h3>
@@ -200,7 +200,7 @@ const AiCoach = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col  gap-3 bg-white rounded-xl p-4">
+              <div className="flex flex-col  gap-4 bg-white rounded-xl p-4">
                 <h3 className="text-lg flex gap-2 items-center text-aiSubTitle font-semibold">
                   <Level /> Confidence Level
                 </h3>
@@ -211,7 +211,7 @@ const AiCoach = () => {
               </div>
             </div>
 
-            <div className="basis-3/8  flex   flex-col bg-aiBG text-black rounded-xl w-full gap-5 p-7">
+            <div className="basis-3/8  flex   flex-col bg-aiBG text-black rounded-3xl w-full gap-5 p-7">
               <h1 className="text-2xl md:text-3xl font-bold font-aiTitle">
                 Quick Actions
               </h1>

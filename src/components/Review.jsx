@@ -57,13 +57,13 @@ const Review = () => {
       <img
         src="/deco/RectangleR.svg"
         alt="Protection Icon"
-        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/6 w-2xl h-2xl rounded-full  blur-lg"
+        className="absolute bottom-0 left-1/2 -z-10 transform -translate-x-1/2 translate-y-1/6 w-2xl h-2xl rounded-full  blur-lg"
       />
 
       <div className="myContainer">
         <div className="max-w-7xl mx-auto my-28">
-          <p className="text-2xl md:text-4xl font-semibold leading-15  text-border mb-10">
-            “ {quote} ”
+          <p className="text-2xl md:text-4xl font-semibold leading-15  text-button mb-10">
+            “ {quote}”
           </p>
 
           <div className="flex flex-col md:flex-row justify-between items-center my-18 gap-4">
@@ -77,7 +77,7 @@ const Review = () => {
                 />
               </div>
               <div className="text-left">
-                <p className="text-lg font-bold text-border">{name}</p>
+                <p className="text-lg font-bold text-button">{name}</p>
                 <p className="text-md text-role">{title}</p>
               </div>
             </div>

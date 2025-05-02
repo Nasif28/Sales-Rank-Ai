@@ -28,11 +28,12 @@ const FAQ = () => {
   return (
     <section className="myContainer pt-40">
       <div className=" mx-auto">
-        <div className="flex flex-col md:flex-row items-start mb-20 gap-20">
+        <div className="flex flex-col md:flex-row items-start mb-20 gap-6 md:gap-26">
           <p className="text-2xl text-foundationBlue">
             Frequently asked <br /> questions
           </p>
-          <h2 className="text-3xl md:text-6xl ">
+
+          <h2 className="text-3xl md:text-5xl ">
             Constant collaboration is how we roll. <br />
             Let’s see if we are a good fit.
           </h2>
@@ -40,7 +41,7 @@ const FAQ = () => {
 
         <div className="space-y-10">
           {faqs.map((faq, index) => (
-            <div key={index} className="border-b pb-10">
+            <div key={index} className="border-b border-faq/30 pb-10">
               <button
                 className="flex items-center justify-between w-full text-left"
                 onClick={() => toggleFAQ(index)}
@@ -55,7 +56,7 @@ const FAQ = () => {
                       {faq.question}
                     </span>
                     {openIndex === index && (
-                      <p className="text-md font-light leading-5  text-faq">
+                      <p className="text-md font-light leading-6  text-faq">
                         {faq.answer}
                       </p>
                     )}

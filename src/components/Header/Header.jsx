@@ -8,7 +8,7 @@ const Header = () => {
       <img
         src="/deco/Rectangle.svg"
         alt="Protection Icon"
-        className="absolute top-0 left-0 w-2xl h-2xl "
+        className="absolute top-0 left-0 w-2xl h-2xl -z-10"
       />
 
       <div className="myContainer">

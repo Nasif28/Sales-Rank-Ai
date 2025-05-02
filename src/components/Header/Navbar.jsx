@@ -1,40 +1,81 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
+  const [showToast, setShowToast] = useState(false);
+
+  const handleClick = () => {
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 3000);
+  };
+
   return (
     <header className="  py-8">
       <div className="max-w-full mx-auto flex items-center justify-between">
         <div className="flex items-center gap-20">
-          <img
-            src="/images/logo.svg"
-            alt="SalesRank.AI"
-            className="h-10 w-auto"
-          />
+          <Link to="/">
+            <img
+              src="/images/logo.svg"
+              alt="SalesRank.AI"
+              className="h-10 w-auto cursor-pointer"
+            />
+          </Link>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-8 text-sm text-nav font-semibold font-jakarta">
-            <a href="#" className="hover:font-bold">
+            <HashLink
+              smooth
+              to="#home"
+              className="hover:font-bold cursor-pointer"
+            >
               Home
-            </a>
-            <a href="#" className="hover:font-bold">
+            </HashLink>
+            <HashLink
+              smooth
+              to="#about"
+              className="hover:font-bold cursor-pointer"
+            >
               About
-            </a>
-            <a href="#" className="hover:font-bold">
+            </HashLink>
+            <HashLink
+              smooth
+              to="#pricing"
+              className="hover:font-bold cursor-pointer"
+            >
               Pricing
-            </a>
-            <a href="#" className="hover:font-bold">
+            </HashLink>
+            <HashLink
+              smooth
+              to="#consulting"
+              className="hover:font-bold cursor-pointer"
+            >
               Consulting
-            </a>
-            <a href="#" className="hover:font-bold">
+            </HashLink>
+            <HashLink
+              smooth
+              to="#aiCoach"
+              className="hover:font-bold cursor-pointer"
+            >
               AI Coach
-            </a>
+            </HashLink>
           </nav>
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="border border-border text-button px-8 py-3 rounded-full hover:bg-border hover:text-white transition duration-200 text-md font-bold">
+          <button
+            onClick={handleClick}
+            className="border cursor-pointer border-button text-button px-6 sm:px-8 py-2.5 sm:py-3 rounded-full hover:bg-button hover:text-white transition duration-200 text-sm sm:text-md font-bold w-fit"
+          >
             Get started
           </button>
+
+          {/* Toast */}
+          {showToast && (
+            <div className="fixed top-6 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-sm px-4 py-2 rounded-full shadow-lg transition-opacity duration-300 z-50">
+              🚧 Link not ready yet. Still work needs to be done.
+            </div>
+          )}
         </div>
       </div>
     </header>
